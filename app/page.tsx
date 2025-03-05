@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-[400px] w-full flex flex-col gap-[2rem] justify-center items-center">
+    <div className="h-[100vh] w-full flex flex-col gap-[2rem] justify-center items-center">
       <div className="todo-title-wrapper">
         <h1 className="text-[2rem] font-bold">Next.js Todo App</h1>
       </div>
@@ -56,7 +56,7 @@ export default function Home() {
         {todos.map((todo) => (
           <div
             key={todo.id}
-            className="flex justify-between items-center bg-[#fff] shadow-xl py-3 px-2"
+            className="flex justify-between items-center bg-[#fff] rounded-[4px] shadow-xl py-3 px-2"
           >
             <span className="text-[#000] capitalize">{todo.text}</span>
             <div className="flex">
