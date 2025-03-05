@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./reset.css";
+import Navbar from "@/components/navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Next.js Todo App",
@@ -14,10 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
+      <body className={`antialiased`}>
+        <Navbar/>
+        <main>{children}</main>
       </body>
     </html>
   );
