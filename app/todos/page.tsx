@@ -7,12 +7,11 @@ export default async function page() {
   return (
     <div className='flex flex-col gap-[1rem]'>
         {todos.map((todo) => (
-            <div className='flex flex-col'>
+            <div key={todo.id} className='flex flex-col'>
                 <span>UserID: {todo.userId}</span>
                 <span>ID: {todo.id}</span>
                 <span>Title: {todo.title}</span>
                 <span>Current: {todo.completed ? "Tamamlandı":"Tamamlanmadı"}</span>
-                
             </div>
         ))}
     </div>
