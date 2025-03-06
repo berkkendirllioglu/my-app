@@ -9,7 +9,7 @@ export default function Home() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [isEmpty, setisEmpty] = useState<boolean>(false);
 
-  const addTodo = (e: FormEvent<HTMLFormElement>) => {
+  const addTodo = (e: FormEvent) => {
     e.preventDefault();
     if (!todoValue.trim()) {
       setisEmpty(true);
